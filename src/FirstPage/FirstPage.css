@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Full-page container */
+  .first-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url('./6.jpeg') no-repeat center center/cover; /* Use your image */
+    overflow: hidden;
+    color: white;
+  }
+  
+  /* Central content box */
+  .content {
+    text-align: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for text readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #ffffff;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #cccccc;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .get-started {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .get-started:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Background animation */
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
+    animation: pulse 6s infinite;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .get-started {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
