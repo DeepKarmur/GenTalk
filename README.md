@@ -12,5 +12,5 @@ This is a web application designed to replicate the core functionalities of Gemi
 **Screenshots**  
 Below are some screenshots of the application:  
 
-![Homepage Screenshot](assets/1.png) 
-![Features Screenshot](assets/2.png) 
+![Homepage Screenshot](src/assets/1.png)
+![Features Screenshot](src/assets/2.png) 
