@@ -38,7 +38,7 @@ const FirstPage = () => {
   return (
     <div className="first-page">
       <div className="content">
-        <h1 className="title">Welcome to AI World</h1>
+        <h1 className="title">Welcome to AI World!</h1>
         <p className="subtitle">Your AI companion for smarter conversations</p>
         <button className="get-started" onClick={handleGetStarted}>
           Get Started
